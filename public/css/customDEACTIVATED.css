@@ -1,0 +1,25 @@
+.header{
+    background-color: #040223d9;
+}
+.sidebar{
+    /* background-color:#f6a35c; */
+    background: linear-gradient(to bottom, #e68200 0%, #4d32e7d2 100%);
+}
+.container-fluid{
+    /* background-color: #ffc78a73; */
+    background: linear-gradient(to bottom left, #e68200 0%, #221d6dd9 100%);
+    
+}
+
+.btn-primary{
+    background-color:#19aed3d9;
+    border: #1e2f8a;
+}
+.side-menu{
+color: #f58220b8;
+}
+
+.dashboard-summary{
+    background: linear-gradient(to bottom left, rgba(255, 72, 0, 0.897) 0%, #040223d9 100%);
+    color: rgb(177, 166, 161);
+}

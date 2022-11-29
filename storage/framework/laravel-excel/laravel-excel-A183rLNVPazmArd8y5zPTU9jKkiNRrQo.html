@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+        <meta name="description" content="Smarthr - Bootstrap Admin Template">
+		<meta name="keywords" content="admin, estimates, bootstrap, business, corporate, creative, management, minimal, modern, accounts, invoice, html5, responsive, CRM, Projects">
+        <meta name="author" content="Dreamguys - Bootstrap Admin Template">
+        <meta name="robots" content="noindex, nofollow">
+        <title>Quizzes - Evaluation Management System </title>
+				<!-- Favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="http://localhost:8080/light-theme/img/favicon.png">
+		
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="http://localhost:8080/light-theme/css/bootstrap.min.css">
+
+<!-- Fontawesome CSS -->
+<link rel="stylesheet" href="http://localhost:8080/light-theme/css/font-awesome.min.css">
+
+<!-- Lineawesome CSS -->
+<link rel="stylesheet" href="http://localhost:8080/light-theme/css/line-awesome.min.css">
+
+<!-- Chart CSS -->
+<link rel="stylesheet" href="http://localhost:8080/light-theme/plugins/morris/morris.css">
+
+
+<!-- Main CSS -->
+<link rel="stylesheet" href="http://localhost:8080/orange-theme/css/style.css">
+
+
+<link rel="stylesheet" href="http://localhost:8080/css/custom.css">
+
+
+    </head>
+	
+    <body>
+		
+        <!-- Main Wrapper -->
+        <div class="main-wrapper"> 
+           
+			<!-- Header -->
+<div class="header" >
+    
+    <!-- Logo -->
+    <div class="header-left bg-info bg-gradient">
+        <a href="http://localhost:8080/home" class="logo">
+            <img src="http://localhost:8080/light-theme/img/logo.png" height="52" width="196" alt="">
+        </a>
+    </div>
+    <!-- /Logo -->
+    
+    <a id="toggle_btn" href="javascript:void(0);">
+        <span class="bar-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </span>
+    </a>
+    
+    <!-- Header Title -->
+    <div class="page-title-box ">
+        <h1 >Evaluation Management System</h1>
+    </div>
+    <!-- /Header Title -->
+    
+    <a id="mobile_btn" class="mobile_btn" href="#sidebar"><i class="fa fa-bars"></i></a>
+    
+    <!-- Header Menu -->
+    <ul class="nav user-menu">
+    
+        <!-- Search -->
+        
+        <!-- /Search -->
+    
+        <!-- Flag -->
+        
+        <!-- /Flag -->
+    
+        <!-- Notifications -->
+       
+        <!-- /Notifications -->
+        
+       
+
+        <li class="nav-item dropdown has-arrow main-drop">
+            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                <span class="user-img"><img src="http://localhost:8080/light-theme/img/profiles/userAvatar.jpg" alt="">
+                <span class="status online"></span></span>
+                <span >Chris Motari</span>
+            </a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="">My Profile</a>
+                <a class="dropdown-item" href="">Settings</a>
+                <a class="dropdown-item" href="http://localhost:8080/logout"
+                    onclick="event.preventDefault();
+                    document.getElementById('logout-form').submit();">
+                        Logout
+                </a>
+
+                <form id="logout-form" action="http://localhost:8080/logout" method="POST" class="d-none">
+                    <input type="hidden" name="_token" value="1jOTpgy64FVBYezhm1CxSGFNdelqQqVEFPabXXYe">                </form>
+            </div>
+        </li>
+    </ul>
+    <!-- /Header Menu -->
+    
+    <!-- Mobile Menu -->
+    <div class="dropdown mobile-user-menu">
+        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+        <div class="dropdown-menu dropdown-menu-right">
+            <a class="dropdown-item" href="#">My Profile</a>
+            <a class="dropdown-item" href="#">Settings</a>
+            <a class="dropdown-item" href="#">Logout</a>
+        </div>
+    </div>
+    <!-- /Mobile Menu -->
+</div>
+<!-- /Header -->			
+			<!-- Sidebar -->
+<div class="sidebar" id="sidebar">
+	<div class="sidebar-inner slimscroll">
+		<div id="sidebar-menu" class="sidebar-menu" >
+			<ul>
+				<li class="menu-title"> 
+					<span>Main</span>
+				</li>
+				<li class=" side-menu"> 
+					<a href="http://localhost:8080/home"><i class="la la-dashboard"></i> <span>Dashboard</span></a>
+				</li>
+
+				<li class=" side-menu"> 
+					<a href="http://localhost:8080/courses"><i class="la la-edit"></i> <span>Courses</span></a>
+				</li>
+
+				
+
+				<li class="side-menu"> 
+					<a href="http://localhost:8080/assessment/41"><i class="la la-rocket"></i> <span>Apptitude test</span></a>
+				</li>
+				
+				<li class=""> 
+					<a href="http://localhost:8080/lessons"><i class="la la-files-o"></i> <span>Lessons</span></a>
+				</li>
+				<li> 
+					<a href="http://localhost:8080/achievements" class="noti-dot"><i class="la la-graduation-cap"></i> <span>My achievements</span></a>
+				</li>
+
+									<li class="menu-title"> 
+						<span>Content management</span>
+					</li>
+
+					<li  class=" side-menu"> 
+						<a href="http://localhost:8080/tokens"><i class="fa fa-key"></i> <span>Tokens</span></a>
+					</li>
+
+					<li  class=" side-menu"> 
+						<a href="http://localhost:8080/quizzes"><i class="la la-question"></i> <span>Quizzes</span></a>
+					</li>
+					
+					<li> 
+						<a href="http://localhost:8080/assessments"><i class="la la-file-text"></i> <span>Quiz attempts</span></a>
+					</li>
+
+					<li class=" side-menu"> 
+						<a href="http://localhost:8080/certificates" class="noti-dot"><i class="la la-certificate"></i> <span>Generated certificates</span></a>
+					</li>
+
+					<li class=" side-menu"> 
+						<a href="http://localhost:8080/candidates"><i class="la la-users"></i> <span>Candidates</span></a>
+					</li>
+
+					<li class="submenu side-menu">
+						<a href="#"><i class="la la-pie-chart"></i> <span> Reports </span> <span class="menu-arrow"></span></a>
+						<ul style="display: none;">
+							<li><a href="#"> Performance in all attempts </a></li>
+							<li><a href="#"> Completion rate</a></li>
+							<li><a href="#"> Time statistics </a></li>
+							<li><a href="#"> Webcam snaps </a></li>
+							<li><a href="#"> Others </a></li>
+						</ul>
+					</li>
+
+					<li class="side-menu"> 
+						<a href="#" class="noti-dot"><i class="la la-bell"></i> <span>Notifications</span></a>
+					</li>
+				
+									<li class="menu-title"> 
+						<span>Admin</span>
+					</li>
+					<li class="submenu  side-menu">
+						<a href="#" ><i class="la la-user"></i> <span> Users</span> <span class="menu-arrow"></span></a>
+						<ul style="display: none;">
+							<li><a href="http://localhost:8080/users">System users</a></li>
+							<li><a href="http://localhost:8080/users/create"><span>Add user</span></a></li>							
+						</ul>
+					</li>
+								
+				<li class="menu-title"> 
+					<span>Extras</span>
+				</li>
+				
+				<li class="side-menu"> 
+					<a href=""><i class="la la-file-pdf-o"></i> <span>Policies</span></a>
+				</li>
+
+				<li class="side-menu"> 
+					<a href="#"><i class="la la-info"></i> <span>Help</span></a>
+				</li>
+
+				<li class="side-menu" style="color: #f58220b8"> 
+					<a href="#"><i class="la la-user-secret"></i> <span>Credits</span></a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- /Sidebar --> 
+            
+            <!-- Page Wrapper -->
+<div class="page-wrapper">
+			
+    <!-- Page Content -->
+    <div class="content container-fluid">
+    
+        <!-- Page Header -->
+        <div class="page-header">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3 class="page-title">Quiz attempts</h3>
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                        <li class="breadcrumb-item active">quizzes</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- /Page Header -->
+
+        <!-- Search Filter -->
+        
+
+        <div class="row filter-row">
+            <div class="col-sm-6 col-md-3">  
+                <div class="form-group form-focus select-focus">
+                    <input type="date" class="form-control floating">
+                    <label class="focus-label">Start date</label>
+                </div>
+                <div class="form-group form-focus select-focus">
+                    <input type="date" class="form-control floating">
+                    <label class="focus-label">End date</label>
+                </div>
+            </div>
+            
+            <div class="col-sm-6 col-md-3"> 
+                <div class="form-group form-focus select-focus">
+                    <select class="select form-control floating"> 
+                        <option>Select course</option>
+                        
+                    </select>
+                    <label class="focus-label">Course</label>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-3"> 
+                <div class="form-group form-focus select-focus">
+                    <select class="select form-control floating"> 
+                        <option>Select lesson</option>
+                        
+                        
+                    </select>
+                    <label class="focus-label">Lesson</label>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-3">  
+                <a href="#" class="btn btn-success btn-block"><i class="fa fa-download"></i> Apply filter </a>  
+                <a href="http://localhost:8080/assessments_export" class="btn btn-success btn-block"><i class="fa fa-download"></i> Export to excel </a>
+            </div>
+        </div>
+        
+
+        <!-- Search Filter -->
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="table-responsive">
+                    <table class="table table-striped custom-table datatable">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                        
+                                <th>Status</th>
+                                <th>Lessons</th>
+                                <th>Quiz score</th>
+                                <th class="text-nowrap">Quiz date Date</th>
+                                <th class="text-right no-sort">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                                                            <tr>
+                                    <td>
+                                        <h2 class="table-avatar">
+                                            <a href="profile.html" class="avatar"><img alt="" src="assets/img/profiles/user_avatar.jpg"></a>
+                                            <a href="profile.html">Richie Moph <span>OOP</span></a>
+                                        </h2>
+                                    </td>
+                                    <td>complete</td>
+                                    <td>OOP</td>
+                                    <td>0</td>
+                                    <td>2021-06-15 18:40:13</td>
+                                    
+                                    
+                                    <td class="text-right">
+                                        <div class="dropdown dropdown-action">
+                                            <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#edit_employee"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_employee"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>
+                                        <h2 class="table-avatar">
+                                            <a href="profile.html" class="avatar"><img alt="" src="assets/img/profiles/user_avatar.jpg"></a>
+                                            <a href="profile.html">Richie Moph <span>OOP</span></a>
+                                        </h2>
+                                    </td>
+                                    <td>complete</td>
+                                    <td>OOP</td>
+                                    <td>0</td>
+                                    <td>2021-06-15 18:40:53</td>
+                                    
+                                    
+                                    <td class="text-right">
+                                        <div class="dropdown dropdown-action">
+                                            <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#edit_employee"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_employee"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>
+                                        <h2 class="table-avatar">
+                                            <a href="profile.html" class="avatar"><img alt="" src="assets/img/profiles/user_avatar.jpg"></a>
+                                            <a href="profile.html">Richie Moph <span>OOP</span></a>
+                                        </h2>
+                                    </td>
+                                    <td>complete</td>
+                                    <td>OOP</td>
+                                    <td>1</td>
+                                    <td>2021-06-15 18:41:09</td>
+                                    
+                                    
+                                    <td class="text-right">
+                                        <div class="dropdown dropdown-action">
+                                            <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#edit_employee"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_employee"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>
+                                        <h2 class="table-avatar">
+                                            <a href="profile.html" class="avatar"><img alt="" src="assets/img/profiles/user_avatar.jpg"></a>
+                                            <a href="profile.html">Richie Moph <span>OOP</span></a>
+                                        </h2>
+                                    </td>
+                                    <td>complete</td>
+                                    <td>OOP</td>
+                                    <td>1</td>
+                                    <td>2021-06-15 18:46:59</td>
+                                    
+                                    
+                                    <td class="text-right">
+                                        <div class="dropdown dropdown-action">
+                                            <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#edit_employee"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_employee"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>
+                                        <h2 class="table-avatar">
+                                            <a href="profile.html" class="avatar"><img alt="" src="assets/img/profiles/user_avatar.jpg"></a>
+                                            <a href="profile.html">Chris Motari <span>Introduction to PM</span></a>
+                                        </h2>
+                                    </td>
+                                    <td>complete</td>
+                                    <td>Introduction to PM</td>
+                                    <td>1</td>
+                                    <td>2021-06-15 18:49:00</td>
+                                    
+                                    
+                                    <td class="text-right">
+                                        <div class="dropdown dropdown-action">
+                                            <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#edit_employee"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_employee"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>
+                                        <h2 class="table-avatar">
+                                            <a href="profile.html" class="avatar"><img alt="" src="assets/img/profiles/user_avatar.jpg"></a>
+                                            <a href="profile.html">Chris Motari <span>Introduction to PM</span></a>
+                                        </h2>
+                                    </td>
+                                    <td>complete</td>
+                                    <td>Introduction to PM</td>
+                                    <td>1</td>
+                                    <td>2021-06-15 19:10:35</td>
+                                    
+                                    
+                                    <td class="text-right">
+                                        <div class="dropdown dropdown-action">
+                                            <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#edit_employee"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_employee"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>
+                                        <h2 class="table-avatar">
+                                            <a href="profile.html" class="avatar"><img alt="" src="assets/img/profiles/user_avatar.jpg"></a>
+                                            <a href="profile.html">Chris Motari <span>Introduction to PM</span></a>
+                                        </h2>
+                                    </td>
+                                    <td>complete</td>
+                                    <td>Introduction to PM</td>
+                                    <td>1</td>
+                                    <td>2021-06-15 19:11:08</td>
+                                    
+                                    
+                                    <td class="text-right">
+                                        <div class="dropdown dropdown-action">
+                                            <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#edit_employee"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_employee"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>
+                                        <h2 class="table-avatar">
+                                            <a href="profile.html" class="avatar"><img alt="" src="assets/img/profiles/user_avatar.jpg"></a>
+                                            <a href="profile.html">Chris Motari <span>OOP</span></a>
+                                        </h2>
+                                    </td>
+                                    <td>complete</td>
+                                    <td>OOP</td>
+                                    <td>1</td>
+                                    <td>2021-06-15 19:11:41</td>
+                                    
+                                    
+                                    <td class="text-right">
+                                        <div class="dropdown dropdown-action">
+                                            <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#edit_employee"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_employee"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>
+                                        <h2 class="table-avatar">
+                                            <a href="profile.html" class="avatar"><img alt="" src="assets/img/profiles/user_avatar.jpg"></a>
+                                            <a href="profile.html">Chris Motari <span>OOP</span></a>
+                                        </h2>
+                                    </td>
+                                    <td>complete</td>
+                                    <td>OOP</td>
+                                    <td>1</td>
+                                    <td>2021-06-15 19:11:54</td>
+                                    
+                                    
+                                    <td class="text-right">
+                                        <div class="dropdown dropdown-action">
+                                            <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#edit_employee"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_employee"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>
+                                        <h2 class="table-avatar">
+                                            <a href="profile.html" class="avatar"><img alt="" src="assets/img/profiles/user_avatar.jpg"></a>
+                                            <a href="profile.html">Chris Motari <span>OOP</span></a>
+                                        </h2>
+                                    </td>
+                                    <td>complete</td>
+                                    <td>OOP</td>
+                                    <td>1</td>
+                                    <td>2021-06-15 19:12:08</td>
+                                    
+                                    
+                                    <td class="text-right">
+                                        <div class="dropdown dropdown-action">
+                                            <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#edit_employee"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_employee"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>
+                                        <h2 class="table-avatar">
+                                            <a href="profile.html" class="avatar"><img alt="" src="assets/img/profiles/user_avatar.jpg"></a>
+                                            <a href="profile.html">Chris Motari <span>OOP</span></a>
+                                        </h2>
+                                    </td>
+                                    <td>complete</td>
+                                    <td>OOP</td>
+                                    <td>1</td>
+                                    <td>2021-06-15 19:12:38</td>
+                                    
+                                    
+                                    <td class="text-right">
+                                        <div class="dropdown dropdown-action">
+                                            <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#edit_employee"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_employee"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>
+                                        <h2 class="table-avatar">
+                                            <a href="profile.html" class="avatar"><img alt="" src="assets/img/profiles/user_avatar.jpg"></a>
+                                            <a href="profile.html">Chris Motari <span>OOP</span></a>
+                                        </h2>
+                                    </td>
+                                    <td>complete</td>
+                                    <td>OOP</td>
+                                    <td>1</td>
+                                    <td>2021-06-15 19:13:36</td>
+                                    
+                                    
+                                    <td class="text-right">
+                                        <div class="dropdown dropdown-action">
+                                            <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#edit_employee"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_employee"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>
+                                        <h2 class="table-avatar">
+                                            <a href="profile.html" class="avatar"><img alt="" src="assets/img/profiles/user_avatar.jpg"></a>
+                                            <a href="profile.html">Chris Motari <span>OOP</span></a>
+                                        </h2>
+                                    </td>
+                                    <td>complete</td>
+                                    <td>OOP</td>
+                                    <td>1</td>
+                                    <td>2021-06-15 19:29:22</td>
+                                    
+                                    
+                                    <td class="text-right">
+                                        <div class="dropdown dropdown-action">
+                                            <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#edit_employee"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_employee"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>
+                                        <h2 class="table-avatar">
+                                            <a href="profile.html" class="avatar"><img alt="" src="assets/img/profiles/user_avatar.jpg"></a>
+                                            <a href="profile.html">Chris Motari <span>OOP</span></a>
+                                        </h2>
+                                    </td>
+                                    <td>complete</td>
+                                    <td>OOP</td>
+                                    <td>1</td>
+                                    <td>2021-06-15 19:29:35</td>
+                                    
+                                    
+                                    <td class="text-right">
+                                        <div class="dropdown dropdown-action">
+                                            <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#edit_employee"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_employee"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>
+                                        <h2 class="table-avatar">
+                                            <a href="profile.html" class="avatar"><img alt="" src="assets/img/profiles/user_avatar.jpg"></a>
+                                            <a href="profile.html">Chris Motari <span>OOP</span></a>
+                                        </h2>
+                                    </td>
+                                    <td>complete</td>
+                                    <td>OOP</td>
+                                    <td>1</td>
+                                    <td>2021-06-15 19:32:13</td>
+                                    
+                                    
+                                    <td class="text-right">
+                                        <div class="dropdown dropdown-action">
+                                            <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#edit_employee"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_employee"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>
+                                        <h2 class="table-avatar">
+                                            <a href="profile.html" class="avatar"><img alt="" src="assets/img/profiles/user_avatar.jpg"></a>
+                                            <a href="profile.html">Chris Motari <span>OOP</span></a>
+                                        </h2>
+                                    </td>
+                                    <td>complete</td>
+                                    <td>OOP</td>
+                                    <td>1</td>
+                                    <td>2021-06-15 19:32:42</td>
+                                    
+                                    
+                                    <td class="text-right">
+                                        <div class="dropdown dropdown-action">
+                                            <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#edit_employee"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_employee"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>
+                                        <h2 class="table-avatar">
+                                            <a href="profile.html" class="avatar"><img alt="" src="assets/img/profiles/user_avatar.jpg"></a>
+                                            <a href="profile.html">Chris Motari <span>OOP</span></a>
+                                        </h2>
+                                    </td>
+                                    <td>complete</td>
+                                    <td>OOP</td>
+                                    <td>1</td>
+                                    <td>2021-06-15 19:33:44</td>
+                                    
+                                    
+                                    <td class="text-right">
+                                        <div class="dropdown dropdown-action">
+                                            <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#edit_employee"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_employee"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>
+                                        <h2 class="table-avatar">
+                                            <a href="profile.html" class="avatar"><img alt="" src="assets/img/profiles/user_avatar.jpg"></a>
+                                            <a href="profile.html">Chris Motari <span>OOP</span></a>
+                                        </h2>
+                                    </td>
+                                    <td>complete</td>
+                                    <td>OOP</td>
+                                    <td>1</td>
+                                    <td>2021-06-15 19:34:49</td>
+                                    
+                                    
+                                    <td class="text-right">
+                                        <div class="dropdown dropdown-action">
+                                            <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#edit_employee"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_employee"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>
+                                        <h2 class="table-avatar">
+                                            <a href="profile.html" class="avatar"><img alt="" src="assets/img/profiles/user_avatar.jpg"></a>
+                                            <a href="profile.html">Chris Motari <span>OOP</span></a>
+                                        </h2>
+                                    </td>
+                                    <td>complete</td>
+                                    <td>OOP</td>
+                                    <td>1</td>
+                                    <td>2021-06-15 19:38:24</td>
+                                    
+                                    
+                                    <td class="text-right">
+                                        <div class="dropdown dropdown-action">
+                                            <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#edit_employee"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_employee"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>
+                                        <h2 class="table-avatar">
+                                            <a href="profile.html" class="avatar"><img alt="" src="assets/img/profiles/user_avatar.jpg"></a>
+                                            <a href="profile.html">Chris Motari <span>OOP</span></a>
+                                        </h2>
+                                    </td>
+                                    <td>complete</td>
+                                    <td>OOP</td>
+                                    <td>0</td>
+                                    <td>2021-06-15 19:39:13</td>
+                                    
+                                    
+                                    <td class="text-right">
+                                        <div class="dropdown dropdown-action">
+                                            <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#edit_employee"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_employee"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                                        
+                        </tbody>
+                    </table>
+                    <nav>
+        <ul class="pagination">
+            
+                            <li class="page-item disabled" aria-disabled="true" aria-label="&laquo; Previous">
+                    <span class="page-link" aria-hidden="true">&lsaquo;</span>
+                </li>
+            
+            
+                            
+                
+                
+                                                                                        <li class="page-item active" aria-current="page"><span class="page-link">1</span></li>
+                                                                                                <li class="page-item"><a class="page-link" href="http://localhost:8080/assessments_export?page=2">2</a></li>
+                                                                                                <li class="page-item"><a class="page-link" href="http://localhost:8080/assessments_export?page=3">3</a></li>
+                                                                                                <li class="page-item"><a class="page-link" href="http://localhost:8080/assessments_export?page=4">4</a></li>
+                                                                                                <li class="page-item"><a class="page-link" href="http://localhost:8080/assessments_export?page=5">5</a></li>
+                                                                                                <li class="page-item"><a class="page-link" href="http://localhost:8080/assessments_export?page=6">6</a></li>
+                                                                                                <li class="page-item"><a class="page-link" href="http://localhost:8080/assessments_export?page=7">7</a></li>
+                                                                                                <li class="page-item"><a class="page-link" href="http://localhost:8080/assessments_export?page=8">8</a></li>
+                                                                                                <li class="page-item"><a class="page-link" href="http://localhost:8080/assessments_export?page=9">9</a></li>
+                                                                                                <li class="page-item"><a class="page-link" href="http://localhost:8080/assessments_export?page=10">10</a></li>
+                                                                                        
+                                    <li class="page-item disabled" aria-disabled="true"><span class="page-link">...</span></li>
+                
+                
+                                            
+                
+                
+                                                                                        <li class="page-item"><a class="page-link" href="http://localhost:8080/assessments_export?page=15">15</a></li>
+                                                                                                <li class="page-item"><a class="page-link" href="http://localhost:8080/assessments_export?page=16">16</a></li>
+                                                                        
+            
+                            <li class="page-item">
+                    <a class="page-link" href="http://localhost:8080/assessments_export?page=2" rel="next" aria-label="Next &raquo;">&rsaquo;</a>
+                </li>
+                    </ul>
+    </nav>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+			
+        </div> 
+        <!-- /Main Wrapper -->
+		
+		<!-- jQuery -->
+<script src="http://localhost:8080/light-theme/js/jquery-3.5.1.min.js"></script>
+		
+<!-- Bootstrap Core JS -->
+<script src="http://localhost:8080/light-theme/js/popper.min.js"></script>
+<script src="http://localhost:8080/light-theme/js/bootstrap.min.js"></script>
+
+<!-- Slimscroll JS -->
+<script src="http://localhost:8080/light-theme/js/jquery.slimscroll.min.js"></script>
+
+<!-- Chart JS -->
+<script src="http://localhost:8080/light-theme/plugins/morris/morris.min.js"></script>
+<script src="http://localhost:8080/light-theme/plugins/raphael/raphael.min.js"></script>
+<script src="http://localhost:8080/light-theme/js/chart.js"></script>
+
+<!-- Custom JS -->
+<script src="http://localhost:8080/light-theme/js/app.js"></script>
+<script src="http://localhost:8080/js/custom.js"></script>
+<script type="text/javascript" src="http://localhost:8080/js/cert_generator.js"></script>		
+        
+        <script>
+            $(function() {
+                $('.alert').delay(1500).fadeIn('normal', function() {
+                    $(this).delay(3500).fadeOut();
+                    });
+                });
+        </script>
+    </body>
+</html>
